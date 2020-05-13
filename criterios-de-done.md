@@ -1,2 +1,5 @@
 # CRITERIOS DE DONE 
-  ## El requerimiento fue implementado, testeado (por el equipo) y aprobado (por el cliente).
+  ## El requerimiento tiene que estarimplementado, 
+  ## El requerimiento tiene que estar testeado por el equipo
+  ## El requerimiento tiene que estar validado por el cliente.
+ 
