@@ -1,2 +1,2 @@
 # CRITERIOS DE DONE 
-  ## El requerimiento fue implementado, testeado y aprobado (por el cliente).
+  ## El requerimiento fue implementado, testeado (por el equipo) y aprobado (por el cliente).
