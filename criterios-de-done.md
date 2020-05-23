@@ -9,3 +9,5 @@
 4. La implementacion tiene que estar testeada por el equipo.
 * Cada integrante tiene que mostrarle su commit a dos de sus compañeros como minimo para el code review.
 * Tambien otro compañero tiene que testear la funcionalidad para validar que cumpla sus criterios.
+
+.
