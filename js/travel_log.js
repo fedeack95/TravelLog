@@ -79,6 +79,28 @@ function mostrarViajes(){
 
 viajes.forEach(element => console.log(element));
 
+let btnAgendarViaje  = document.getElementById("btn_agendarViaje");
+if (btnAgendarViaje!=undefined && btnAgendarViaje!=null){
+    btnAgendarViaje.addEventListener('click', cargaAgendarViaje);
+}
+function cargaAgendarViaje() {
+    let container = document.getElementById("bloquePartialRender");
+    container.innerHTML = '<div class="container"><div class="title"><h1 class="title">MI VIAJE</h1><p>Los campos indicados con * son obligatorios</p></div><form><div class="form-group"><label for="exampleFormControlInput1">Nombre del viaje *</label><input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""></div><div class="form-group"><label for="exampleFormControlInput1">Ciudad origen *</label><input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""></div><div class="form-group"><label for="exampleFormControlInput1">Ciudad destino *</label><input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""></div><div class="form-group"><label for="exampleFormControlTextarea1">Descripción</label><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></div><div class="form-group"><label for="exampleFormControlInput1">Compañia de transporte</label><input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""></div><div class="form-group"><label for="exampleFormControlInput1">Código de reserva</label><input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""></div><div class="form-group"><label for="exampleFormControlInput1">Fecha de inicio *</label><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="xx/xx/xxxx"></div><div class="form-group"><label for="exampleFormControlInput1">Fecha de fin *</label><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="xx/xx/xxxx"></div><div class="containerButton"><button id="btn_email_reserva" type="button" class="btn btn-primary btn-lg btn-medium"><a class="button" href="agendarViaje.html">USAR EMAIL DE RESERVA</a></button></div><div class="containerButton"><button id="btn_agendar" type="button" class="btn btn-primary btn-lg btn-medium"><a class="button" href="mensajeDeConfirmacion.html">AGENDAR</a></button></div></form></div>'
+}  
+
+let btnMisViajes  = document.getElementById("btn_misViajes");
+console.log(btnMisViajes)
+if (btnMisViajes!=undefined && btnAgendarViaje!=null){
+    btnMisViajes.addEventListener('click', cargaMostrarViajes);
+}
+function cargaMostrarViajes(){
+    let container = document.getElementById("bloquePartialRender");
+    container.innerHTML = "";
+    for (let i = 0; i<viajes.length; i++){
+        container.innerHTML += viajes[i].nombre
+    }
+}
+   
 
 
 });
