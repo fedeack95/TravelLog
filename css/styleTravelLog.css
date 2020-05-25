@@ -25,6 +25,8 @@
 @media (max-width: 575.98px)and (orientation:portrait) {
     body{background: white;}
 
+    .navbar-fixed-top {position: fixed}
+    
     .bg-light {padding-top: 5px !important;
         padding-right: 20px !important;
         padding-bottom: 15px !important;
@@ -47,24 +49,44 @@
         color: white;}
 
     .navbar-brand {padding-bottom: 15px !important;
-    scroll-padding-top: 10px !important; }
+    scroll-padding-top: 10px !important;}
+    
     hr.nav {padding: 0px; margin: 12px 0px 12px 0px; width:100%; 
             border: 0.5px dashed rgba(255, 255, 255, 0.2);}
         
-    div.containerButton { display:flex; justify-content: center; }
+    div.containerButton {display:flex; justify-content: center;}
 
     button.btn.btn-primary.btn-lg { width: 250px; height: 100px;
         padding: 0px 40px 0px 40px; margin: 30px 0px 0px 0px;
-        background: rgba(230, 32, 73, 1); font-weight: 600;}
+        background: rgba(230, 32, 73, 1); font-weight: 600;
+        border-color:  rgba(230, 32, 73, 1);}
+    button.btn-medium {padding: 0px 20px 0px 20px !important;
+        font-size: medium; height: 50px !important;}
 
+    a.button {color: white;}
 
+    .btn.btn-success {
+        color: white;
+        background-color: rgba(230, 32, 73, 1) !important;
+    }
+    .btn.btn-success:focus {
+        background-color: rgba(230, 32, 73, 0.8) !important;
+    }
 
-    .carousel {height: 220px;}
+    .carousel {height: 220px;} */
 
     img {align-items: center;}
 
-    img.d-block .w-100 { height: 220px !important; width: 800px !important;}
+    img.d-block .w-100 {height: 220px !important; 
+        width: 800px !important;}
 
+    h1.title {text-align: center; margin: 0px 0px 25px 0px;
+        color: rgba(230, 32, 73, 1);}
+
+    div.container {padding: 20px 30px 50px 30px;}
+
+    label {color: rgba(230, 32, 73, 1);
+        font-weight: 600;}
  }
 
 /*landscape*/
