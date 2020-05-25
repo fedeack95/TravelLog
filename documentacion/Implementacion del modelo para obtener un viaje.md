@@ -1,0 +1,1 @@
+Se implemento en el modelo la funcion para la obtencion de un viaje dado su id. En esta se realiza un consulta SELECT con el mencionado id (uso de metodo auxiliar para evitar injection), luego estos datos son enviados al controlador.
