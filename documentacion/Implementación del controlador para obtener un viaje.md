@@ -1,0 +1,1 @@
+Se implementó en el controaldor la función correspondiente a la obtención de un viaje en particular. En la misma se le pide al modelo que haga la consulta correspondiente para luego enviarle los datos a la vista.
