@@ -1,0 +1,2 @@
+-Implementar solución encontrada para el procesamiento de email.
+ Segun lo investigado se utilizo mail-parsing y se implemento un metodo para buscar los datos en el email (vuelo, reserva, etc) y posteriormente enviarlos hacia nuestra API para completar un viaje.
