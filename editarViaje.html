@@ -29,12 +29,15 @@
     </nav>
     <div class="container">
       <div class="title">
-        <h1 class="title">MI VIAJE</h1>
-        <p>Los campos indicados con * son obligatorios</p>
+        <h3 class="title">EDITAR VIAJE</h3>
       </div>
       <form>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Nombre del viaje *</label>
+          <label for="exampleFormControlInput1">Nombre del viaje</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Ciudad origen *</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
         </div>
         <div class="form-group">
@@ -50,7 +53,7 @@
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Número de vuelo</label>
+          <label for="exampleFormControlInput1">Código de reserva</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
         </div>
         <div class="form-group">
@@ -63,13 +66,13 @@
         </div>
        
         <div class="containerButton">
-          <button id="btn_email_reserva" type="button" class="btn btn-primary btn-lg btn-medium btn-success">
-            <a class="button" href="agendarViaje.html">USAR EMAIL DE RESERVA</a>
-          </button>
+          <button id="btn_email_reserva" type="button" class="btn btn-secondary btn-lg btn-medium btn_cancel">
+            <a class="buttonCancel" href="index.html">CANCELAR</a>
+        </button>
         </div>
         <div class="containerButton">
           <button id="btn_agendar" type="button" class="btn btn-primary btn-lg btn-medium btn-success">
-              <a class="button" href="mensajeDeConfirmacion.html">AGENDAR</a>
+              <a class="button" href="agendarViajeFinalFlujo.html">CONFIRMAR</a>
           </button>
         </div>
 

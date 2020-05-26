@@ -25,6 +25,7 @@
 @media (max-width: 575.98px)and (orientation:portrait) {
     body{background: white;}
 
+    /*NAV*/
     .navbar-fixed-top {position: fixed}
     
     .bg-light {padding-top: 5px !important;
@@ -51,11 +52,16 @@
     .navbar-brand {padding-bottom: 15px !important;
     scroll-padding-top: 10px !important;}
     
+    /*FILETES*/
     hr.nav {padding: 0px; margin: 12px 0px 12px 0px; width:100%; 
             border: 0.5px dashed rgba(255, 255, 255, 0.2);}
-        
+
+    hr.filete {padding: 0px; margin: 12px 0px 12px 0px; width:100%; 
+        border: 0.5px solid rgba(230, 32, 73, 1);}  
+
     div.containerButton {display:flex; justify-content: center;}
 
+    /*BOTONES*/
     button.btn.btn-primary.btn-lg { width: 250px; height: 100px;
         padding: 0px 40px 0px 40px; margin: 30px 0px 0px 0px;
         background: rgba(230, 32, 73, 1); font-weight: 600;
@@ -69,10 +75,19 @@
     button.btn-medium {padding: 0px 20px 0px 20px !important;
         font-size: medium; height: 50px !important;}
 
-    a.button {color: white;}
+    a.button {color: white; text-decoration: none;}
 
     a.buttonCancel {color: rgba(230, 32, 73, 1);}
 
+    button.edit, button.map {height: 30px !important;
+        margin: 30px 10px 0px 10px !important;}
+
+    button.btn-success:active {background-color:rgba(230, 32, 73, 0.8) !important;
+        border: none !important;}
+
+    button.btn-success:hover {box-shadow: 0px 0px 0 0.0rem rgba(255,255,255,1) !important;}
+
+    /*TITULOS*/
     h1.title {text-align: center; margin: 0px 0px 25px 0px;
         color: rgba(230, 32, 73, 1);}
 
@@ -82,16 +97,20 @@
     h6 {color: rgba(230, 32, 73, 1);}
     h5 {color: rgba(230, 32, 73, 1); text-align: center;}
 
+    /*CONTENEDORES*/
     div.container {padding: 20px 30px 50px 30px;}
 
-    div.mensajeAlUsuario {padding: 20px 30px 10px 30px;}
+    div.mensajeAlUsuario {padding: 20px 30px 50px 30px;}
 
-    div.containerData {background-color: rgba(230, 32, 73, 0.5);
-        padding: 20px;}
+    div.templateDetail {padding: 20px 30px 50px 30px;}
+
+    div.containerData {background-color: rgba(230, 32, 73, 0.2);
+        padding: 20px 25px 30px 25px;}
     
-    div.containerMessage {background-color: rgba(230, 32, 73, 0.5);
+    div.containerMessage {background-color: rgba(230, 32, 73, 0.2);
         padding: 50px 20px 50px 20px; margin: 50px 0px 50px 0px;}
 
+    /*TEXTOS*/
     span{ font-weight: 700; color: rgba(230, 32, 73, 1);}
 
     label {color: rgba(230, 32, 73, 1);
