@@ -32,10 +32,126 @@ let planes = [
         "travel_id_travel" : 1,
         "ciudad_origen" : "Buenos Aires",
         "fecha_comienzo" : "14-1-2021",
-        "fecha_fin" : "28-12-2021",
+        "fecha_fin" : "28-12-2021"
+    },
+    {
+        "id_plan" : 2,
+        "categoria" : "T",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Paris",
+        "fecha_comienzo" : "26-3-2021",
+        "fecha_fin" : "26-5-2021"
+    },
+    {
+        "id_plan" : 3,
+        "categoria" : "T",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Madrid",
+        "fecha_comienzo" : "26-3-2021",
+        "fecha_fin" : "26-5-2021"
+    },
+    {
+        "id_plan" : 4,
+        "categoria" : "E",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Madrid",
+        "fecha_comienzo" : "27-3-2021",
+        "fecha_fin" : "27-3-2021"
+    },
+    {
+        "id_plan" : 5,
+        "categoria" : "E",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Madrid",
+        "fecha_comienzo" : "28-3-2021",
+        "fecha_fin" : "28-3-2021"
+    },
+    {
+        "id_plan" : 6,
+        "categoria" : "E",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Madrid",
+        "fecha_comienzo" : "1-4-2021",
+        "fecha_fin" : "1-4-2021"
+    },
+    {
+        "id_plan" : 7,
+        "categoria" : "E",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Madrid",
+        "fecha_comienzo" : "5-4-2021",
+        "fecha_fin" : "5-4-2021"
+    },
+    {
+        "id_plan" : 8,
+        "categoria" : "E",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Madrid",
+        "fecha_comienzo" : "14-4-2021",
+        "fecha_fin" : "14-4-2021"
+    },
+    {
+        "id_plan" : 9,
+        "categoria" : "H",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Paris",
+        "fecha_comienzo" : "14-1-2021",
+        "fecha_fin" : "26-3-2021"
+    },
+    {
+        "id_plan" : 10,
+        "categoria" : "E",
+        "travel_id_travel" : 1,
+        "ciudad_origen" : "Madrid",
+        "fecha_comienzo" : "26-3-2021",
+        "fecha_fin" : "26-5-2021"
+    }
+];
+//Creación array plan hospedaje
+//camping - hostel - hotel - particular
+let hospedaje = [
+    {
+        "plan_id_plan" : 9,
+        "direccion" : "29 rue d'Amsterdam",
+        "tipo_hospedaje" : "hotel"
+    },
+    {
+        "plan_id_plan" : 10,
+        "direccion" : "23 Ruedes Messageries",
+        "tipo_hospedaje" : "hotel"
+    }
+];
+//Creación array plan excursión
+//aire libre - gastronomica - museo - urbana
+let excursion = [
+    {
+        "plan_id_plan" : 4,
+        "nombre" : "Comidas Tipicas",
+        "tipo_excursion" : "gastronomica"
+    },
+    {
+        "plan_id_plan" : 5,
+        "nombre" : "Museo de historia de Madrid",
+        "tipo_excursion" : "museo"
+    },
+    {
+        "plan_id_plan" : 6,
+        "nombre" : "Museo nacional del Prado",
+        "tipo_excursion" : "museo"
+    },
+    {
+        "plan_id_plan" : 7,
+        "nombre" : "Visita a las fincas",
+        "tipo_excursion" : "aire libre"
+    },
+    {
+        "plan_id_plan" : 8,
+        "nombre" : "recorrido por la ciudad",
+        "tipo_excursion" : "urbana"
     }
 ];
 //Creación array plan transporte
+//aereo - bus - particular - tren
 let transportes = [
     {
         "plan_id_plan" : 1,
@@ -46,15 +162,27 @@ let transportes = [
         "asiento" : 34,
         "codigo_reserva" : 58248,
         "numero_vuelo" : 3901789
+    },
+    {
+        "plan_id_plan" : 2,
+        "destino" : "Madrid",
+        "tipo_transporte" : "Aereo",
+        "empresa" : "Air France",
+        "transbordo" : 2,
+        "asiento" : 56,
+        "codigo_reserva" : 52568,
+        "numero_vuelo" : 3204779
+    },
+    {
+        "plan_id_plan" : 3,
+        "destino" : "Madrid",
+        "tipo_transporte" : "Bus",
+        "empresa" : null,
+        "transbordo" : null,
+        "asiento" : 33,
+        "codigo_reserva" : null,
+        "numero_vuelo" : null
     }
-];
-//Creación array plan excursión
-let excursion = [
-
-];
-//Creación array plan hospedaje
-let hospedaje = [
-
 ];
 //To do
 function crearViaje(){
