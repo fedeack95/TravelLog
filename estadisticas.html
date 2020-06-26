@@ -23,15 +23,42 @@
                 <a class="nav-item nav-link" href="#">Perfil</a><hr class="nav">
                 <a class="nav-item nav-link" href="misViajes.html">Viajes</a><hr class="nav">
                 <a class="nav-item nav-link" href="#">Planes</a><hr class="nav">
-                <a class="nav-item nav-link" href="#estadisticas.html">Estadísticas</a>
+                <a class="nav-item nav-link" href="estadisticas.html">Estadísticas</a>
             </div>
             </div>
         </nav>
-        <canvas id="myChart" width="320" height="400"></canvas>
-
+        <div id='estadisticas'>
+            <h3 id='estadisticas_label'>ESTADÍSTICAS</h3>
+            <div id='estadisticas_hospedajes'>
+                <h4 class='plan_label'>Hospedajes</h4><hr>
+                <canvas id="myChartHospedajes" width="320" height="400"></canvas>
+            </div>   
+            <div id='estadisticas_translados'>
+                <h4 class='plan_label'>Translados</h4><hr>
+                <canvas id="myChartTranslados" width="320" height="400"></canvas>
+            </div>
+             <div id='estadisticas_excursiones'>
+                <h4 class='plan_label'>Excursiones</h4><hr>
+                 <canvas id="myChartExcursiones" width="320" height="400"></canvas>
+             </div>
+             <hr>
+        </div>
+        <div>
+            <div id="km_recorridos">
+                <h5 id='km_text'>Km recorridos</h5>
+                <div class='caja_km'>20.355</div>
+             </div>
+             <div id="paises">
+                <h5 class='text'>Paises</h5>
+                <h6 class='text_value'>Argentina - Brasil - Francia</h6>
+            </div>
+            <div id="ciudades">
+                <h5 class='text'>Ciudades</h5>
+                <h6 class='text_value'>Buenos aires - Camboriu - Copacabana - hamsterdam - Paris</h6>    
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="js/estadisticas.js"></script>
-
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
